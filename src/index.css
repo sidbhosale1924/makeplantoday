@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: orange;
+  padding: 15px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-div {
+  height: 100vh;
+  background: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.inner-div {
+  background-color: white;
+
+  height: 50%;
+  width: 25%;
+  border-radius: 7px;
+}
+
+.inner-div h1 {
+  background: pink;
+  margin: 15px 0;
+  text-align: center;
+  color: orange;
+}
+
+.add-items {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-items input {
+  width: 75%;
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid orange;
+}
+
+.add-items button {
+  height: 35px;
+  width: 35px;
+  font-size: 30px;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  background: orange;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-items button:hover {
+  background: white;
+  color: orange;
+  border: 1px solid orange;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.inner-div ul {
+  margin-top: 25px;
+  list-style-type: none;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.list-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-box li {
+  font-size: 25px;
+  color: rgb(45, 137, 241);
+  padding: 0 10px;
+}
+
+.list-box i {
+  color: white;
+  height: 25px;
+  width: 25px;
+  font-size: 20px;
+  padding: 5px;
+  background: #666;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-box i:hover {
+  cursor: pointer;
+  background-color: crimson;
+  font-weight: bolder;
+}
+
+.HR {
+  color: green;
+  margin: 0 20px;
+}
+
+@media (max-width: 1000px) {
+  .inner-div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner-div {
+    font-size: 55%;
+    width: 85%;
+    height: 80%;
+  }
+}
